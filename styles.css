@@ -299,3 +299,16 @@ img {
 .feature__icon {
     color: #6415ff;
 }
+
+
+/* WORK */
+
+.work__description {
+    max-width: 576px;
+    margin-right: 64px;
+
+}
+
+.work_description--button {
+    margin-top: 32px;
+}
