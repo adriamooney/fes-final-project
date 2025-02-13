@@ -312,3 +312,92 @@ img {
 .work_description--button {
     margin-top: 32px;
 }
+
+/* STEPS */
+
+/* .steps__row {
+    justify-content: center;
+    display: flex;
+} */
+
+.steps__list {
+    display: flex;
+    flex-direction: column;
+
+}
+.steps__description {
+    padding-left: 64px;
+    width: 50%;
+}
+
+.steps__img--wrapper {
+    width: 50%;
+}
+
+.step {
+    display: flex;
+    margin-top: 32px;
+}
+
+.step__number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.step__title {
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.step__description {
+   max-width: 320px;
+   margin-left: 24px;
+   /* display: flex;
+   flex-direction: column; */
+}
+
+.step__para {
+    font-size: 14px;
+    color: #718096;
+    margin-top: 12px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+/* values */
+
+.values__list {
+    display: flex;
+    margin-top: 32px;
+    
+}
+
+.value__icon {
+    padding: 10px;
+    background-color: #feb2b2;
+    border-radius: 100%;
+    text-align: center;
+    height: 38px;
+    width: 38px;
+    margin-right: 8px;
+}
+
+.value__icon--green {
+    background-color: #9ae6b4;
+}
+
+.value__title {
+    /* margin-left: 12px; */
+    font-size: 20px;
+    font-weight: bold;
+    color: #243e63;
+}
+
+.value__para {
+    margin-top: 16px;
+    line-height: 1.625;
+    color: #718096;
+}
