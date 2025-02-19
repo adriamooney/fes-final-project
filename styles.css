@@ -149,6 +149,7 @@ img {
 
 .nav__top {
     padding: 32px 32px 0 32px;
+    position:relative;
 }
 
 .nav__menu--link:after {
@@ -1013,6 +1014,11 @@ header .flex {
     background: transparent;
     cursor: pointer;
 }
+.btn__menu {
+    position: absolute;
+    top: 48px;
+    right: 24px;
+}
 
 .nav__menu {
     visibility: hidden;
@@ -1078,4 +1084,17 @@ header .flex {
     z-index: 5;
 }
 
+}
+/*** smaller size ***/
+
+@media (max-width: 768px) { 
+
+    .features {
+        justify-content: center;
+    }
+
+    .feature {
+        width: auto;
+        max-width: 384px;
+    }
 }
