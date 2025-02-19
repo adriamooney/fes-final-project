@@ -25,6 +25,17 @@ purple-blue bg: rgb(100, 21, 255);
 */
 
 /* generic styles */
+.btn__menu, .modal, .nav__menu--modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 450ms ease;
+}
+
+.modal {
+    transform: translateX(300%);
+    height: 0;
+}
+
 .container {
     padding: 96px 0;
 }
@@ -882,4 +893,189 @@ footer {
 .footer__social--icon {
     font-size: 12px;
     
+}
+
+/* responsive media queries */
+
+@media (max-width: 1024px) {
+
+h1 {
+    font-size: 30px;
+}
+
+header .flex {
+    flex-direction: column;
+    align-items: center;
+}
+.header__description, .header__img--wrapper {
+    text-align: center;
+    width: 100%;
+    max-width: 512px;
+    margin: 0 auto;
+}
+.header__img--wrapper {
+    margin-top: 48px;
+}
+
+.header__description--para, .section__para {
+    font-size: 16px;
+}
+
+.header__logos {
+    padding: 0;
+}
+
+.header__email {
+    max-width: 512px;
+}
+
+.section__title {
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+/* FEATURES */
+.features {
+    max-width: 768px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: calc(50%);
+}
+
+#features .section__title {
+    text-align: center;
+}
+
+/* QUALITY WORK */
+
+.values__list {
+    flex-direction: column;
+    max-width: 320px;
+    margin-top: 0;
+}
+
+.value {
+    margin-top: 40px;
+}
+
+/* PRICING */
+
+.plans__row {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan {
+    width: 100%;
+}
+
+
+
+/* TESTIMONIALS */
+
+.testimonials__description {
+    width: calc(100% - 41.6667%);
+    padding-left: 48px;
+}
+
+/* CTA */
+
+.cta__row {
+    flex-direction: column;
+}
+
+.cta__title {
+    width: 100%;
+    max-width: 512px;
+    text-align: center;
+}
+
+.cta__btns {
+    margin-top: 24px;
+}
+.cta__btn {
+    padding: 16px 32px;
+}
+
+#cta .container {
+    padding: 0 32px;
+}
+
+/* HAMBURGER MENU */
+
+.btn__menu, .btn__close {
+    visibility: visible;
+    opacity: 1;
+    border: none;
+    font-size: 24px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.nav__menu {
+    visibility: hidden;
+}
+
+.menu--open .modal, .menu--open .nav__menu--modal {
+    opacity: 1;
+    visibility: visible;
+    z-index: 4;
+}
+
+.menu--open .modal {
+    position: fixed;
+    /* position: absolute; */
+    height: 100%;
+    left: 0; 
+    top: 0;
+    right: 0;
+    margin: 24px 16px;
+    background-color: #fff;
+    padding: 32px;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    transform: translateX(0);
+    height: 378px;
+
+}
+
+.menu--open .nav__menu--modal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.menu--open .nav__menu--link {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 8px 0;
+    padding-bottom: 4px;
+    color: #1a202c;
+    display: flex;
+}
+
+.menu--open .nav__menu--link:after {
+    opacity: 0;
+}
+
+.menu--open .nav__menu--login-link {
+    margin-left: 0;
+}
+
+.menu--open .btn--primary {
+    padding: 12px 32px;
+    font-size: 18px;
+}
+
+
+.btn__close {
+    position: absolute;
+    top: 24px;
+    right: 18px;
+    z-index: 5;
+}
+
 }

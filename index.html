@@ -11,6 +11,30 @@
 <body>
 
     <section id="landing">
+        <div class="modal">
+            <button class="btn__close" onclick="closeMenu()"><i class="fa-solid fa-x"></i></button>
+        
+            <ul class="nav__menu--modal">
+                <li class="nav__menu--item">
+                    <a href="#about" class="nav__menu--link">About</a>
+                </li>
+                <li class="nav__menu--item">
+                    <a href="#blog" class="nav__menu--link">Blog</a>
+                </li>
+                <li class="nav__menu--item">
+                    <a href="#pricing" class="nav__menu--link">Pricing</a>
+                </li>
+                <li class="nav__menu--item">
+                    <a href="#contact" class="nav__menu--link">Contact Us</a>
+                </li>
+                <li class="nav__menu--item">
+                    <a href="" class="nav__menu--link nav__menu--login-link">Login</a>
+                </li>
+                <li class="nav__menu--item">
+                    <a href="" class=""><button class="btn--primary">Sign Up</button></a>
+                </li>
+            </ul>
+        </div>
         <nav class="nav__top">
             <div class="flex flex--spaced">
                 <div class="nav__logo--wrapper">
@@ -37,6 +61,9 @@
                         <a href="" class=""><button class="btn--primary">Sign Up</button></a>
                     </li>
                 </ul>
+                <button class="btn__menu" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+                
+               
             </div>
     
         </nav>
@@ -168,8 +195,8 @@
                         <img src="assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="">
                     </figure>
                     <div class="steps__description">
-                        <h2 class="section__subtitle">Steps</h2>
-                        <h1 class="section__title">Easy to  <span class="purple">Get Started</span></h1>
+                        <h3 class="section__subtitle">Steps</h3>
+                        <h2 class="section__title">Easy to  <span class="purple">Get Started</span></h2>
 
                         <div class="steps__list">
                             <div class="step">
